@@ -120,7 +120,7 @@ section{
     position:relative;
     width: 100%;
     height: 100vh;
-    background: url(img/bg.png);
+    /* background: url(img/bg.png); */
     background-size: cover;
     background-position: center;
     display: grid;
@@ -130,18 +130,18 @@ section{
 }
 .hero-img img
 {
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin-top: 10em;
+    margin-top: 5em;
     margin-left: 10em;
 }
 .hero-text h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight:900 ;
-    margin: 15px 0;
+    margin: -18.5px 0;
 }
 .hero-text h5{
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1em;
@@ -188,7 +188,8 @@ section{
 }
 /* slider */
 .swiper{
-    width: 105%;
+    width: 100%;
+    margin-top: -8em;
   
 }
 .swiper-wrapper{
@@ -201,7 +202,7 @@ section{
 .card{
     width: 20em;
     height: 50%;
-    background-color: white;
+    background-color: #ae8957;
     border-radius: 2em;
     padding: 2em 1em;
     display: flex;
@@ -213,7 +214,7 @@ section{
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid #9176ff;
+    border: 5px solid white;
     padding: 3px;
     margin-bottom: 2em;
 }
@@ -234,12 +235,8 @@ section{
     font-weight: 500;
     position: relative;
     top: .2em;
-    color: black;
+    color: white;
 }
-
-
-
-
 
 
 @media(max-width:1770px)
