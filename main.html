@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+         <!-- Swipper js -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <!-- Boxicon  link -->
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- remixicon link -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Goggle fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
     <title>Aries</title>
 </head>
+
 <body>
     <!-- header -->
-     <header>
+    <header>
         <a href="#" class="logo">
-            <img src="img/nlogo.png" alt="" >
+            <img src="img/nlogo.png" alt="">
         </a>
         <ul class="Navlist">
             <li><a href="#">Home</a></li>
@@ -37,42 +43,148 @@
             <a href="#" class="nav-btn">Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-     </header>
-     <!-- main section -->
-      <section class="hero">
+    </header>
+    <!-- main section -->
+    <section class="hero">
         <div class="hero-text">
-            <h5 data-aos="fade-right" data-aos-duration="1400" >Grow your</h5>
-            <h5 data-aos="fade-right" data-aos-duration="1400" >bussiness with</h5>
+            <h5 data-aos="fade-right" data-aos-duration="1400">Grow your</h5>
+            <h5 data-aos="fade-right" data-aos-duration="1400">bussiness with</h5>
             <h1 data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="200" class="animate-text">
                 <span>VICTSS</span>
-            </h1 >
-            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Elevate your business with Loyal IT Solutions. Our
-expertise fuels your growth, transforming
-challenges into opportunities. Unlock your full 
-potential today.  
+            </h1>
+            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Elevate your business with Loyal IT
+                Solutions. Our
+                expertise fuels your growth, transforming
+                challenges into opportunities. Unlock your full
+                potential today.
             </p>
-            <div data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400" class="main-hero" >
-                <a class="btn"href="#">Read more</a>
+            <div data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400" class="main-hero">
+                <a class="btn" href="#">Read more</a>
             </div>
         </div>
-
-        <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400" >
+        <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
             <img src="img/i2.png" alt="">
         </div>
-      </section>
-      <div class="scroll">
+    </section>
+    <div class="scroll">
         <a href="#">
             <i class="ri-scroll-to-bottom-line"></i>
             Scroll Down
         </a>
-      </div>
-    <!-- js link -->
-     <script src="script.js"></script>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-       AOS.init({
-        offset:1,
-       });
-     </script>
+    </div>
+    <section class="s2">
+        <div class="industries">
+            <h5>Industries We Work With</h5>
+        </div>
+
+<section class=" swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/service management.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">Service Management</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/hospitality.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">hospitality</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/project management.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">Project Management</span>        
+            </div>
+        </div>
+
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/e-commerce.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">E-commerce</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/manufacturer.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">Manufacturer</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/logistics.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">Logistics</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/CRM.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">CRM</span>        
+            </div>
+        </div>
+
+        <div class="card swiper-slide">
+            <div class="card_image">
+                <img src="img/HRMS.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="card_title">HRMS</span>        
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+
+
+<!-- js link -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1,
+        });
+    </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
+
 </html>
