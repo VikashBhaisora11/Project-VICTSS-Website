@@ -242,7 +242,7 @@ section{
 .about-section
 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
 
 }
 .about-container
@@ -309,6 +309,123 @@ section{
     transition: all .50s ease;
 }
 
+/* What we offer Section */
+.what-section{
+    margin-left: 10rem;
+}
+.what-section .what-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.what-section .what-content-section .what-content p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-left: 23rem;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 50%;
+    text-align: center;
+}
+.what-container .what-content-section .what-title{
+    text-align: center;
+}
+.image-cards-container
+{
+    display: grid;
+    place-items:center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+.card__container
+{
+    display: grid;
+    row-gap: 3.5rem;
+}
+.card__artical
+{
+    position: relative;
+    overflow: hidden;
+}
+.card__artical:hover .card__data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+.card__artical:hover{
+    animation: remove-overflow 2s forwards;
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+.card__artical:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+.card__artical:not(:hover) .card__data{
+    animation: remove-data 1s forwards;
+}
+@keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+@keyframes show-overflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+.card__image{
+    width: 328px;
+    border-radius: 1.5rem;
+}
+.card__data{
+    width: 280px;
+    background:linear-gradient(to right, #ebf4f5,#b5c6e0);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 94%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity:0 ;
+    transition: opacity 1s 1s;
+}
+.card__Description{
+    display: block;
+    font-size: .813rem;
+    color: black;
+    margin-bottom: .25rem;
+}
+.card__title
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: .75rem;
+}
 
 @media screen and (max-width:950px)
 {
@@ -354,8 +471,7 @@ section{
         padding:11px 30px;
     }
 }
-
-@media(max-width:1770px)
+@media screen and (max-width:1770px)
 {
     header{
         padding: 22px 4%;
@@ -364,20 +480,20 @@ section{
         right: 4%;
     }
 }
-@media(max-width:1670px)
+@media screen and (max-width:1670px)
 {
     :root{
         --big-font:3.5rem;
         --p-font:15px;
     }
 }
-@media(max-width:1370px)
+@media screen and (max-width:1370px)
 {
     section{
         padding: 0 4%;
     }
 }
-@media(max-width:1150px)
+@media screen and (max-width:1120px)
 {
     :root{
         --big-font:3rem;
@@ -386,7 +502,7 @@ section{
         padding:10px 23px;
     }
 }
-@media(max-width:950px)
+@media screen and (max-width:950px)
 {
     #menu-icon{
         display:block;
@@ -415,7 +531,7 @@ section{
         left:0;
     }
 }
-@media(max-width:920px)
+@media screen and (max-width:920px)
 {
     .scroll{
         display: none;
@@ -439,7 +555,7 @@ section{
     }
 }
 
-@media(max-width:570px)
+@media screen and (max-width:570px)
 {
     .hero{
         height:100vh;
@@ -454,7 +570,7 @@ section{
         --big-font:2.7rem;
     }
 }
-@media(max-width:440px)
+@media screen and (max-width:440px)
 {
     :root{
         --big-font:2.5rem;
@@ -466,5 +582,36 @@ section{
         height: 360px;
         width: 360px;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width:340px) {
+    .image-cards-container{
+        margin-inline: 1rem;
+    }
+    .card__data{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .card__container{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1.5rem;
+    }
+}
+@media screen and (min-width:1120px)
+{
+    .image-cards-container{
+        height: 100vh;
+    }
+    .card__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .card__image{
+        width: 348px;
+    }
+    .card__data{
+        width: 316px;
+        padding-inline: 2.5rem;
     }
 }
