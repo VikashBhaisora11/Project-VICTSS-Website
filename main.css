@@ -270,6 +270,16 @@ section{
     text-transform: uppercase;
     font-size: 28px;
 }
+.content-section .about-title::before{
+    position: absolute;
+    content: '';
+    width: 5%;
+    margin-left: 10px;
+    height: 0.2em;
+    background: linear-gradient(45deg, #6B01FF,#fff,#6B01FF);
+    margin-top:80px ;
+    border-radius: 100px;
+}
 .content-section .about-content p{
     margin-top: 20px;
     color: white;
