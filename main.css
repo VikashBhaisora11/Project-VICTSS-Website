@@ -238,6 +238,112 @@ section{
     color: white;
 }
 
+/* About section */
+.about-section
+{
+    width: 100%;
+    min-height: 100vh;
+
+}
+.about-container
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section
+{
+    float: left;
+    width: 55%;
+}
+.video-section
+{
+    float: right;
+    width: 40%;
+    border: 8px solid white;
+}
+.video-section iframe{
+    width: 100%;
+}
+.content-section .about-title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .about-content p{
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 65%;
+}
+.content-section .about-content .about-button a
+{
+    display: inline-block;
+    flex: 1 1 auto;
+    margin-right: 20px;
+    padding:13px 32px;
+    text-align: center;
+    text-transform:uppercase ;
+    transform: 0.5s;
+    background-size: 200% auto;
+    color: var(--text-color);
+    border-radius: 50px;
+    background-image: linear-gradient(to right,#6B01FF,var(--text-color));
+}
+.content-section .about-content .about-button{
+    margin-top: 30px;
+}
+.content-section .about-content .about-button a:hover{
+    transform:scale(1.1);
+    transition: all .50s ease;
+}
+
+
+@media screen and (max-width:950px)
+{
+    .about-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .video-section{
+        float: none;
+        width: 100%;
+    }
+    .video-section iframe{
+        width: 100%;
+        height: auto;
+        display:block ;
+        margin:auto;
+    }
+    .content-section .about-content p{
+        margin-top: 18px;
+        color: white;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 50%;
+        text-align: center;
+    }
+    .content-section .about-title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .about-content .about-button{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .content-section .about-content .about-button a{
+        padding:11px 30px;
+    }
+}
 
 @media(max-width:1770px)
 {
