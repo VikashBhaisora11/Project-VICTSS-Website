@@ -1,3 +1,6 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -120,7 +123,6 @@ section{
     position:relative;
     width: 100%;
     height: 100vh;
-    /* background: url(img/bg.png); */
     background-size: cover;
     background-position: center;
     display: grid;
@@ -189,7 +191,7 @@ section{
 /* slider */
 .swiper{
     width: 100%;
-    margin-top: -8em;
+    /* margin-top: -6em; */
   
 }
 .swiper-wrapper{
@@ -202,7 +204,7 @@ section{
 .card{
     width: 20em;
     height: 50%;
-    background-color: #ae8957;
+    background-color: #e3f2fd;
     border-radius: 2em;
     padding: 2em 1em;
     display: flex;
@@ -214,7 +216,7 @@ section{
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid black;
     padding: 3px;
     margin-bottom: 2em;
 }
@@ -235,7 +237,7 @@ section{
     font-weight: 500;
     position: relative;
     top: .2em;
-    color: white;
+    color: black;
 }
 
 /* About section */
@@ -329,13 +331,14 @@ section{
     text-align: center;
 }
 .what-container .what-content-section .what-title{
-    text-align: center;
+    margin-left: 35rem;
 }
 .image-cards-container
 {
     display: grid;
     place-items:center;
     margin-inline: 1.5rem;
+    margin-right: 10rem;
     padding-block: 5rem;
 }
 .card__container
@@ -427,6 +430,203 @@ section{
     margin-bottom: .75rem;
 }
 
+/* Advisory section */
+.advisory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(45deg,#40c9ff,#e81cff);
+}
+.advisory .advisory-content h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.advisory .advisory-content p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Achivements section */
+.achivements{
+    margin-top: -1em;
+    height: 8vh;
+    width: 100%;
+    background: linear-gradient(45deg,#40c9ff,#e81cff);
+}
+.achivements-content-1 h1{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+}
+.achivements-content-1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.achivements-content-2 p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+}
+.achivements-content-2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* Hear section */
+.Hear-section{
+    margin-top:5rem;
+}
+.Hear-section .Hear-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.Hear-section .Hear-content-section .Hear-content p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+.Hear-container .Hear-content-section .Hear-title{
+    font-size: 28px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+/* testimonial section */
+.testimonial-container{
+    margin-top: 2.5rem;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+.testimonial{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.testimonial .images{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* background-color: black; */
+    border:5px solid #4070f4;
+    
+}
+.testimonial .testimonial-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.testimonial-slide p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 100px;
+    color: #333;
+}
+.testimonial-slide span{
+    color: black;
+}
+.testimonial-slide .quote-icon
+{
+    font-size: 30px;
+    color: #4070f4;
+}
+.testimonial-slide .testimonial-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial-details .testimonial-name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.testimonial-details .testimonial-job{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* footer section */
+.footer{
+    padding: 80px 13% 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    margin-top: 10rem;
+    background:linear-gradient(45deg,#40c9ff,#e81cff);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.footer-content h4{
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.footer-content li{
+    margin-bottom: 16px;
+}
+.footer-content li a{
+    display: block;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+.footer-content li a:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color:var(--main-color)
+}
+.footer-content p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.footer-icon a{
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 17px;
+    transition: all .40s ease;
+}
+.footer-icon a:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+.footer img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
 @media screen and (max-width:950px)
 {
     .about-container{
@@ -482,6 +682,9 @@ section{
 }
 @media screen and (max-width:1670px)
 {
+    .footer{
+        padding: 50px 5% 40px;
+    }
     :root{
         --big-font:3.5rem;
         --p-font:15px;
@@ -495,6 +698,11 @@ section{
 }
 @media screen and (max-width:1120px)
 {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
     :root{
         --big-font:3rem;
     }
@@ -557,6 +765,11 @@ section{
 
 @media screen and (max-width:570px)
 {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2.5rem;
+    }
     .hero{
         height:100vh;
     }
